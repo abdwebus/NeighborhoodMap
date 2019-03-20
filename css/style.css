@@ -1,1 +1,10 @@
-/* Style */
+/* General */
+html, body{
+	height: 100%;
+}
+
+
+/* Map */
+#map{
+	height: 100%;
+}

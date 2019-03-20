@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
 	<!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!--  Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--  Bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Application CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<title></title>
+	<!-- Application CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Neiborhood Map</title>
 </head>
 <body>
+	<div id="map"></div>
 
+
+	<!-- Google Map JavaScript -->
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlsUp2m4Gn0jOkiXinjU-J43ICnjpVD10&callback=initMap">
+	</script>
 
 	<!-- Knockout JavaScript -->
 	<script type='text/javascript' src='js/knockout-3.5.0.js'></script>
