@@ -13,18 +13,51 @@
 	<title>Neiborhood Map</title>
 </head>
 <body>
-	<div id="map"></div>
+	
+	<div class="pos-f-t">
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+			<button id="sidebarButton" class="navbar-toggler" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+	</div>
+	<aside id="sidebar" class="bg-secondary sidebar">
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon2">
+			<div class="input-group-append">
+				<button class="btn bg-primary" type="button">Filter</button>
+			</div>
+		</div>
+		<div class="list-group">
+			<button type="button" class="list-group-item list-group-item-action active">Cras justo odio</button>
+			<button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis i</button>
+			<button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+			<button type="button" class="list-group-item list-group-item-action">Porta ac consectetur c</button>
+			<button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button>
+		</div>
+		<button>hi there</button>
+	</aside>
+	<div id="map" class=""></div>
+	
+	
 
 
-	<!-- Google Map JavaScript -->
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlsUp2m4Gn0jOkiXinjU-J43ICnjpVD10&callback=initMap">
-	</script>
+	
 
 	<!-- Knockout JavaScript -->
 	<script type='text/javascript' src='js/knockout-3.5.0.js'></script>
 
 	<!-- Application JavaScript -->
 	<script type="text/javascript" src="js/app.js"></script>
+
+	<!-- Google Map JavaScript -->
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlsUp2m4Gn0jOkiXinjU-J43ICnjpVD10&callback=initMap">
+	</script>
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,8 +3,64 @@ html, body{
 	height: 100%;
 }
 
-
 /* Map */
 #map{
-	height: 100%;
+	height: calc(100% - 56px);
+	top: 56px;
+	right: 0;
+	position: absolute;
+	left: 0px;
+}
+
+
+/* Aside */
+aside{
+	width: 300px;
+	background: red;
+}
+
+/*#sidebarButton{
+	visibility: initial;
+}*/
+
+.sidebar{
+	left: 0;
+	bottom: 0;
+	top: 56px;
+	position: fixed;
+	z-index: 1000;
+	-webkit-transition: left 1s; /* Safari */
+  	transition: left 1s;
+  	padding: 10px;
+}
+
+.hiddenSidebar{
+	left: -300px;
+}
+
+button {
+    outline: 0 !important;
+}
+
+/* Media Query */
+@media screen and (min-width: 900px) {
+	/*.sidebar{
+		left: 0;
+		bottom: 0;
+		top: 56px;
+		position: fixed;
+		z-index: 1000;
+	}*/
+
+	#map{
+		left: 300px;
+	}
+
+	#sidebarButton{
+		visibility: hidden;
+	}
+
+	.hiddenSidebar{
+	left: 0px;
+}
 }
