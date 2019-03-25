@@ -23,17 +23,18 @@
 	</div>
 	<aside id="sidebar" class="bg-secondary sidebar hiddenSidebar">
 		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon2">
+			<input type="text" class="form-control" placeholder="Place" aria-label="Location" aria-describedby="basic-addon2" data-bind="value: query, valueUpdate: 'keyup'">
 			<div class="input-group-append">
-				<button class="btn bg-primary" type="button">Filter</button>
+				<p class="btn bg-primary">Filter</p>
 			</div>
 		</div>
-		<div class="list-group">
-			<button type="button" class="list-group-item list-group-item-action active">Cras justo odio</button>
-			<button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis i</button>
-			<button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+		<div class="list-group" data-bind="foreach: searchResult">
+			<button type="button" class="list-group-item list-group-item-action" data-bind="text: title, click: activate, css: {active: active}, visible: hidden"></button>
+			<!-- <button type="button" class="list-group-item list-group-item-action active" data-bind="text: firstName"></button>
+			<button type="button" class="list-group-item list-group-item-action" data-bind="text: lastName"></button>
+			<button type="button" class="list-group-item list-group-item-action" data-bind="text: fullName"></button>
 			<button type="button" class="list-group-item list-group-item-action">Porta ac consectetur c</button>
-			<button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button>
+			<button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button> -->
 		</div>
 	</aside>
 	<div id="map" class=""></div>
@@ -47,7 +48,9 @@
 	<script type='text/javascript' src='js/knockout-3.5.0.js'></script>
 
 	<!-- Application JavaScript -->
+	<script type="text/javascript" src="js/model.js"></script>
 	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" src="js/viewModel.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 	<!-- Google Map JavaScript -->
