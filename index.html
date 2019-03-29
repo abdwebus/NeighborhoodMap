@@ -29,12 +29,7 @@
 			</div>
 		</div>
 		<div class="list-group" data-bind="foreach: searchResult">
-			<button type="button" class="list-group-item list-group-item-action" data-bind="text: title, click: activate, css: {active: active}, visible: hidden"></button>
-			<!-- <button type="button" class="list-group-item list-group-item-action active" data-bind="text: firstName"></button>
-			<button type="button" class="list-group-item list-group-item-action" data-bind="text: lastName"></button>
-			<button type="button" class="list-group-item list-group-item-action" data-bind="text: fullName"></button>
-			<button type="button" class="list-group-item list-group-item-action">Porta ac consectetur c</button>
-			<button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button> -->
+			<button type="button" class="list-group-item list-group-item-action" data-bind="text: title, click: $root.activate, css: {active: active}, visible: hidden"></button>
 		</div>
 	</aside>
 	<div id="map" class=""></div>
@@ -42,15 +37,17 @@
 	
 
 
-	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Knockout JavaScript -->
 	<script type='text/javascript' src='js/knockout-3.5.0.js'></script>
 
 	<!-- Application JavaScript -->
 	<script type="text/javascript" src="js/model.js"></script>
-	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" src="js/viewEvent.js"></script>
 	<script type="text/javascript" src="js/viewModel.js"></script>
+	<script type="text/javascript" src="js/googleMapAPI.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 	<!-- Google Map JavaScript -->
@@ -59,7 +56,6 @@
 	</script>
 
 	<!-- Bootstrap JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
