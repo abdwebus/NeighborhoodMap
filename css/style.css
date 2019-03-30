@@ -19,10 +19,6 @@ aside{
 	background: red;
 }
 
-/*#sidebarButton{
-	visibility: initial;
-}*/
-
 .sidebar{
 	left: 0;
 	bottom: 0;
@@ -38,20 +34,13 @@ aside{
 	left: -300px;
 }
 
+
 button {
-    outline: 0 !important;
+    outline: 0 !important; /* Fix an issue when button focus gets stuck with some browsers */
 }
 
 /* Media Query */
 @media screen and (min-width: 900px) {
-	/*.sidebar{
-		left: 0;
-		bottom: 0;
-		top: 56px;
-		position: fixed;
-		z-index: 1000;
-	}*/
-
 	#map{
 		left: 300px;
 	}
@@ -62,5 +51,5 @@ button {
 
 	.hiddenSidebar{
 	left: 0px;
-}
+	}
 }
