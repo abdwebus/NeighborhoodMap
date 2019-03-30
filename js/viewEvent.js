@@ -1,6 +1,17 @@
+/**
+* @description Handles the show/hide functionality of the sidebar
+*/
 var ViewEvent = function(){
 	var self = this;
 	
+	/**
+	* @description Initiate the object 
+	*
+	* Creates an event listener to the sidebar button.
+	* Assigns the div that holds the map to a property.
+	* Assigns the div that holds the sidebar to a property.
+	* Calls the method handleMapEventListener.
+	*/
 	self.init = function(){
 		document.getElementById('sidebarButton').addEventListener('click', self.toggleSidebar);
 		self.mapElement = document.getElementById('map');
@@ -9,7 +20,7 @@ var ViewEvent = function(){
 	};
 
 	/**
-	* Toggle hiddenSidebar class on the sidebar element.
+	* @description Toggle hiddenSidebar class on the sidebar element.
 	*
 	* This functions only on small devices:
 	* Show sidebar when the sidebar is hidden.
@@ -22,7 +33,7 @@ var ViewEvent = function(){
 	};
 
 	/**
-	* Add/Remove map event listener according to sidebar position status.
+	* @description Add/Remove map event listener according to sidebar position status.
 	*
 	* Add click event listener to the map element when sidebar is visible 
 	* on small screen devices. 

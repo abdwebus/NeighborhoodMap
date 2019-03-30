@@ -1,3 +1,6 @@
+/**
+* @description Holds app related google map information
+*/
 var Model = function() {
 	var self = this;
 
